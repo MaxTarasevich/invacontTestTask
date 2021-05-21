@@ -2,3 +2,12 @@ mixin pictureType(src,alt,srcset)
     picture 
         source(srcset=srcset, type="image/webp")
         img(src=src, alt=alt, loading="lazy")
+
+
+
+mixin card(title,src)
+    .card 
+        .card__image 
+            img(src=`img/${src}`, alt=title)
+        .card__title=title 
+        a.card__button(href="#", target="_blank", rel="noopener noreferrer") Learn more
