@@ -1,0 +1,29 @@
+.community{
+    background-image: url(../img/bg_bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    .container{
+        padding: 7.5% 0;
+        .community__title{
+            @include title-2-light;
+            line-height: 1;
+            span{
+                display: block;
+                font-size: 54px;
+                font-weight: bold;
+                letter-spacing: normal;
+                color: $grass-green;
+            }
+        }
+        .community__text{
+            width: 45%;
+            @include text-2;
+            margin-bottom: 2.6%;
+        }
+        .button{
+            margin: 0;
+            width: 164px;
+        }
+    }
+}

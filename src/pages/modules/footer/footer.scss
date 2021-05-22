@@ -1,0 +1,19 @@
+.footer {
+    .container{
+        .nav{
+            margin: 0;
+            color: $warm-grey;
+            li:hover{
+                color: $slime-green;
+            }
+        }
+    }
+    .footer__description{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 13.2% 2% 11.2%;
+        background-color: $white-two;
+        @include footer-text;
+    }
+}

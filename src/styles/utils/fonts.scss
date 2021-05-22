@@ -1,5 +1,5 @@
 // Файл для подключения нестандартных шрифтов
-@font-face {
+/*@font-face {
     font-family: 'Blogger Sans';
     src: local('Blogger Sans Italic'), local('BloggerSans-Italic'),
         url('../fonts/BloggerSans-Italic.otf') format('otf'),
@@ -8,23 +8,12 @@
     font-style: italic;
     font-display: swap;
 }
-@font-face {
-    font-family: Arial;
-    src: local(ArialMT),
-      url(../fonts/ArialMT.otf) format("otf"),
-      url(../fonts/ArialMT.woff) format("woff"),
-      url(../fonts/ArialMT.ttf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    font-display: swap;
-  }
+*/
   @font-face {
     font-family: HelveticaNeueCyr;
     src: local(HelveticaNeueCyr-Light),
-      url(../fonts/HelveticaNeueCyr-Light.otf) format("otf"),
       url(../fonts/HelveticaNeueCyr-Light.woff) format("woff"),
-      url(../fonts/HelveticaNeueCyr-Light.ttf) format("truetype");
+      url(../fonts/HelveticaNeueCyr-Light.woff2) format("woff2");
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -33,9 +22,8 @@
   @font-face {
     font-family: HelveticaNeueCyr;
     src: local(HelveticaNeueCyr-Bold),
-      url(../fonts/HelveticaNeueCyr-Bold.otf) format("otf"),
       url(../fonts/HelveticaNeueCyr-Bold.woff) format("woff"),
-      url(../fonts/HelveticaNeueCyr-Bold.ttf) format("truetype");
+      url(../fonts/HelveticaNeueCyr-Bold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -44,9 +32,8 @@
   @font-face {
     font-family: HelveticaNeueCyr;
     src: local(HelveticaNeueCyr-Black),
-      url(../fonts/HelveticaNeueCyr-Black.otf) format("otf"),
       url(../fonts/HelveticaNeueCyr-Black.woff) format("woff"),
-      url(../fonts/HelveticaNeueCyr-Black.ttf) format("truetype");
+      url(../fonts/HelveticaNeueCyr-Black.woff2) format("woff2");
     font-weight: 900;
     font-style: normal;
     font-stretch: normal;
@@ -55,9 +42,7 @@
   @font-face {
     font-family: NimbusSanTCon;
     src: local(NimbusSanTConBold),
-      url(../fonts/NimbusSanTConBold.otf) format("otf"),
-      url(../fonts/NimbusSanTConBold.woff) format("woff"),
-      url(../fonts/NimbusSanTConBold.ttf) format("truetype");
+      url(../fonts/NimbusSanL-Bol.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;

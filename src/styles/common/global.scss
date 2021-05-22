@@ -19,6 +19,7 @@ body {
 ul{
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
@@ -35,4 +36,30 @@ header,section,footer{
 .container{
     max-width: 960px;
     margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include menu-buttons;
+    cursor: pointer;
+    margin-bottom: 4.9%;
+    text-transform: uppercase;
+    li{
+        padding:30px 17px 26px ;
+        border-radius: 5px;
+    }
+}
+.button{
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: solid 2px #a1ad97;
+    @include menu-buttons;
+    transition: all 0.4s ease-in;
+    cursor:pointer;
+}
+.button:hover{
+    border: solid 2px $slime-green;
+    color:$slime-green;
 }

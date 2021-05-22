@@ -1,10 +1,11 @@
 .header{
     padding-top: 17px;
     padding-bottom: 240px;
-    background-image: url(../img/bg_top.jpg);
+    background-image: url(../img/bg_top2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+    position: relative;
     .container{
         .logo{
             width: 315px;
@@ -14,18 +15,21 @@
            border-radius: 150px 150px 0 0;
             text-align: center;
             background-color: $white;
+            .elipse{
+               position: absolute;
+               display: block;
+               width: 100%;
+               top: 19.6%;
+               left: 0;
+               z-index: 5;
+            }
         }
         .nav{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include menu-buttons;
-            cursor: pointer;
-            margin-bottom: 4.9%;
+            border-top-left-radius:50%;
+            border-top-right-radius:50%;
+            overflow: hidden;
             li{
-                padding:20px ;
-                border-radius: 5px;
-               
+                transition: all 0.4s ease-in;
             }
             li:hover{
                 background-color: $rusty-orange;

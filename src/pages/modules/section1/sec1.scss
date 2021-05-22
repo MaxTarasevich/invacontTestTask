@@ -1,11 +1,10 @@
 .about{
     background-color: $pine;
     border-top:4px solid $rusty-orange;
+    position: relative;
     .container{
-        position: relative;
         .cards{
-            position: relative;
-            top:-110px;
+            margin-top: -11.5%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -29,18 +28,8 @@
                     @include cards-description;
                     text-align: center;
                 }
-                .card__button{
-                    display: block;
-                    margin: 0 auto;
+                .button{
                     width: 75%;
-                    border-radius: 5px;
-                    border: solid 2px #a1ad97;
-                    @include menu-buttons;
-                    transition: all 0.4s ease-in;
-                }
-                .card__button:hover{
-                    border: solid 2px $slime-green;
-                    color:$slime-green;
                 }
             }
             .card:nth-of-type(3n),.card:last-of-type{
