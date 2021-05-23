@@ -1,13 +1,23 @@
 .header{
-    padding-top: 17px;
-    padding-bottom: 240px;
-    background-image: url(../img/bg_top2.jpg);
+   // padding-bottom: 235px;
+    background-image: url(../img/bg_top.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     position: relative;
     .container{
+        padding-top: 15%;
+        padding-bottom: 18.3%;
         .logo{
+            position: absolute;
+            top:18px;
+            left: 0;
+            z-index: 4;
+            img{
+                width: 100%;
+            }
+        }
+        /*.logo{
             width: 315px;
             height: 181px;
             margin: 0 auto;
@@ -19,16 +29,20 @@
                position: absolute;
                display: block;
                width: 100%;
-               top: 19.6%;
+               top: 20.2%;
                left: 0;
                z-index: 5;
             }
-        }
+        }*/
+
         .nav{
-            border-top-left-radius:50%;
-            border-top-right-radius:50%;
+            border-top-left-radius:100%;
+            border-top-right-radius:100%;
             overflow: hidden;
-            li{
+            margin-top: 8px;
+            li{ 
+                position: relative;
+                z-index: 5;
                 transition: all 0.4s ease-in;
             }
             li:hover{
@@ -36,13 +50,20 @@
             }
         }
         .header__title{
+            position: relative;
+            z-index: 5;
             max-width: 750px;
             margin: 0 auto;
             margin-bottom: 2%;
             text-shadow: 0 0 6px rgba(31, 88, 0, 0.75);
             @include  title;
+            @include media-custom(650px){
+                margin-bottom: 6%;
+            }
         }
         .header__content{
+            position: relative;
+            z-index: 5;
             padding: 3% 4.8% 3.6% 4.6%;
             opacity: 0.7;
             border-radius: 5px;
@@ -50,7 +71,10 @@
             text-align: center;
             .header__content-title{
                 @include sub-title;
-                margin-bottom: 2%;
+                margin-bottom: 1%;
+                @include media-custom(650px){
+                    margin:4%;
+                }
             }
             .header__content-text{
                 @include text-sec1;

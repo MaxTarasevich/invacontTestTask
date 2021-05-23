@@ -1,14 +1,4 @@
 // Файл для подключения нестандартных шрифтов
-/*@font-face {
-    font-family: 'Blogger Sans';
-    src: local('Blogger Sans Italic'), local('BloggerSans-Italic'),
-        url('../fonts/BloggerSans-Italic.otf') format('otf'),
-        url('../fonts/BloggerSans-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-*/
   @font-face {
     font-family: HelveticaNeueCyr;
     src: local(HelveticaNeueCyr-Light),
@@ -42,7 +32,8 @@
   @font-face {
     font-family: NimbusSanTCon;
     src: local(NimbusSanTConBold),
-      url(../fonts/NimbusSanL-Bol.woff2) format("woff2");
+    url(../fonts/NimbusSanTConBold.woff) format("woff"),
+    url(../fonts/NimbusSanTConBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -58,6 +49,15 @@
     letter-spacing: normal;
     text-align: center;
     color: $pale-grey;
+    @include media-custom(900px){
+      font-size: 50px;
+    }
+    @include media-custom(700px){
+      font-size: 40px;
+    }
+    @include media-custom(500px){
+      font-size: 25px;
+    }
   }
   @mixin title-2-bold {
     font-family: HelveticaNeueCyr;
@@ -66,6 +66,15 @@
     line-height: 0.98;
     text-align: left;
     color: $grass-green;
+    @include media-custom(900px){
+      font-size: 40px;
+    }
+    @include media-custom(700px){
+      font-size: 30px;
+    }
+    @include media-custom(500px){
+      font-size: 20px;
+    }
   }
   @mixin title-2-light {
     font-family: HelveticaNeueCyr;
@@ -74,6 +83,15 @@
     line-height: 1.56;
     text-align: left;
     color: $black;
+    @include media-custom(900px){
+      font-size: 30px;
+    }
+    @include media-custom(700px){
+      font-size: 25px;
+    }
+    @include media-custom(500px){
+      font-size: 20px;
+    }
   }
   @mixin sub-title {
     font-family: HelveticaNeueCyr;
@@ -82,6 +100,15 @@
     line-height: 1.18;
     text-align: center;
     color: $pale-grey;
+    @include media-custom(900px){
+      font-size: 30px;
+    }
+    @include media-custom(700px){
+      font-size: 25px;
+    }
+    @include media-custom(500px){
+      font-size: 20px;
+    }
   }
   @mixin cards-description {
     font-family: HelveticaNeueCyr;
@@ -90,11 +117,20 @@
     line-height: 1.18;
     text-align: left;
     color: $pale-grey;
+    @include media-custom(900px){
+      font-size: 30px;
+    }
+    @include media-custom(700px){
+      font-size: 25px;
+    }
+    @include media-custom(500px){
+      font-size: 20px;
+    }
   }
   @mixin menu-buttons {
     font-family: NimbusSanTCon;
     font-size: 19px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 2.11;
     text-align: center;
     color: $white;
@@ -120,3 +156,4 @@
     text-align: left;
     color: $warm-grey-two;
   }
+ 

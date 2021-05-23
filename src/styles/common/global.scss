@@ -30,34 +30,45 @@ a{
     color: inherit;
 }
 header,section,footer{
-    max-width: 1280px;
+   max-width: 1280px;
     margin: 0 auto;
 }
 .container{
     max-width: 960px;
     margin: 0 auto;
+    @include media-custom(1100px){
+        width:90%;
+    }
 }
 .nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     @include menu-buttons;
     cursor: pointer;
     margin-bottom: 4.9%;
     text-transform: uppercase;
+    line-height: 1;
     li{
-        padding:30px 17px 26px ;
-        border-radius: 5px;
+        padding:27px 18px 22px 18px;
+        border-radius: 0 0 5px 5px;
     }
 }
 .button{
     display: block;
     margin: 0 auto;
+    padding: 16px;
     border-radius: 5px;
     border: solid 2px #a1ad97;
     @include menu-buttons;
+    line-height: 1;
+    text-transform: uppercase;
     transition: all 0.4s ease-in;
     cursor:pointer;
+    @include media-custom(750px){
+        padding: 10px;
+    }
 }
 .button:hover{
     border: solid 2px $slime-green;
