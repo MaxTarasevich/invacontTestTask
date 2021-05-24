@@ -1,7 +1,12 @@
 header.header
-    .container 
+    .container
+        .header_burger-menu 
+            svg(viewbox='0 0 100 80' width='40' height='40')
+                rect(width='100' height='20' rx='8')
+                rect(y='30' width='100' height='20' rx='8')
+                rect(y='60' width='100' height='20' rx='8')
         .logo
-           img(src="./img/logo@1x.png", alt="logo")
+           img(src="./img/Logo.png", alt="logo")
         include ../nav/nav 
         .header__title For All Your Landscaping&nbsp;Needs...
         .header__content 
