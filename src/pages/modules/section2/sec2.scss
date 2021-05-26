@@ -3,6 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
+    border-bottom: 4px solid #7da83c;
+    @include media-custom(750px){
+        background-position: bottom center;
+    }
     .container{
         padding: 6% 0 8%;
         .community__title{
@@ -18,9 +22,9 @@
             }
             @include media-custom(650px){
                 text-align: center;
-                color:$white;
+                //color:$white;
                 span{
-                    color:$white;
+                    //color:$white;
                     font-size: 45px;
                 }
             }
@@ -31,10 +35,10 @@
             margin-bottom: 2.2%;
             @include media-custom(750px){
                 width: 60%;
-                padding: 3% 4.8% 3.6% 4.6%;
-                border-radius: 5px;
+                padding: 3% 4.8% 3.6% 0;
+                /*border-radius: 5px;
                 background-color: rgba(38, 49, 28, 0.7);
-                color:$white;
+                color:$white;*/
             }
             @include media-custom(650px){
                 width: 80%;
@@ -48,23 +52,15 @@
             margin: 0;
             width: 164px;
             transition: all 0.4s ease-in;
-            border-color: $white;
+            color: $grass-green;
+            border-color: $grass-green;
             @include media-custom(650px){
                 margin: 0 auto;
             }
-            @include media-custom(550px){
-                color: $grass-green;
-            border-color: $grass-green;
-            }
         }
         .button:hover{
-            color: $grass-green;
-            border-color: $grass-green;
-            @include media-custom(550px){
-                color: $warm-grey;
-                border-color: $warm-grey;
-
-            }
+            color: $rusty-orange;
+            border-color: $rusty-orange;
         }
     }
 }

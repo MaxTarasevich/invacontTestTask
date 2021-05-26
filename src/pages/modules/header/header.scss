@@ -6,6 +6,9 @@
     position: relative;
     .container{
         padding-bottom: 18.3%;
+        @include media-custom(650px){
+            padding-bottom: 160px;
+        }
         .header_burger-menu{
             display: none;
             position: absolute;
@@ -28,15 +31,18 @@
         }
         .logo{
             position: relative;
-            /**/
             z-index: 8;
             top:20px;
             img{
                 width: 100%;
+                @include media-custom(700px){
+                    display: block;
+                    width: 50%;
+                    margin: 0 auto;
+                }
             }
         }
         .nav{
-            /**/
             margin-top: -10px;
             border-top-left-radius:100%;
             border-top-right-radius:100%;
@@ -60,7 +66,6 @@
                 background-color: $rusty-orange;
             }
         }
-/**/ 
 nav{
     position: relative;
 }
@@ -75,6 +80,7 @@ nav{
     height: 250px;
     z-index: 1;
     top:-5px;
+    filter:blur(8px);
     @include media-custom(1000px){
         top:0px;
     }
@@ -125,6 +131,7 @@ nav{
             text-align: center;
             .header__content-title{
                 @include sub-title;
+                color:$white;
                 margin-bottom: 1%;
                 @include media-custom(650px){
                     margin:4%;
